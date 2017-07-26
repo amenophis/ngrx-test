@@ -1,1 +1,7 @@
-<div *ngFor="let item of (massifs$ | async)?.massifs">{{ item.id }}</div>
+<ul>
+    <li *ngFor="let item of massifs$ | async">{{ item.name }}</li>
+</ul>
+
+<ul>
+    <li *ngFor="let item of areas$ | async">{{ item.name }}</li>
+</ul>
